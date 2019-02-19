@@ -1,0 +1,21 @@
+{
+  "name": "laravel-mix-imagemin",
+  "version": "0.0.0",
+  "description": "Laravel Mix imagemin plugin",
+  "keywords": [
+    "laravel mix",
+    "mix",
+    "imagemin"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/CupOfTea696/laravel-mix-imagemin",
+  "author": "Frankie Wittevrongel <frankie@cupoftea.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CupOfTea696/laravel-mix-imagemin/issues"
+  },
+  "homepage": "https://github.com/CupOfTea696/laravel-mix-imagemin#readme",
+  "peerDependencies": {
+    "laravel-mix": ">=2.1"
+  }
+}
