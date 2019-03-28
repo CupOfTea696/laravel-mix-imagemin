@@ -36,7 +36,7 @@ let mix = require('laravel-mix');
 
 require('laravel-mix-imagemin');
 
-// Copy all files within `resources` matching `img/**.*` into the public path, perserving the file tree.
+// Copy all files within `resources` matching `img/**.*` into the public path, preserving the file tree.
 // Minify all images, `optipng` with `optimizationLevel` 5, disabling `jpegtran`, and adding `mozjpeg`.
 mix
     .js('resources/js/app.js', 'public/js')
