@@ -1,5 +1,9 @@
 # Mix Imagemin
 
+![npm](https://img.shields.io/npm/dt/laravel-mix-imagemin.svg)
+![npm](https://img.shields.io/npm/v/laravel-mix-imagemin.svg)
+![npm](https://img.shields.io/npm/l/laravel-mix-imagemin.svg?color=%23458778)
+
 This extension provides Imagemin support to your Mix (v2.1 and up) builds.
 
 ## Usage
