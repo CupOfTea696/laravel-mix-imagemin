@@ -30,7 +30,7 @@ class Imagemin {
         return [
             new CopyWebpackPlugin(patterns, copyOptions),
             new ImageminPlugin(imageminOptions),
-            new ManifestPlugin,
+            new ManifestPlugin(patterns),
         ];
     }
 }

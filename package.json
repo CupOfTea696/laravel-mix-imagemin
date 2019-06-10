@@ -15,6 +15,9 @@
     "url": "https://github.com/CupOfTea696/laravel-mix-imagemin/issues"
   },
   "homepage": "https://github.com/CupOfTea696/laravel-mix-imagemin#readme",
+  "devDependencies": {
+    "multimatch": "^4.0.0"
+  },
   "peerDependencies": {
     "laravel-mix": ">=2.1"
   }
