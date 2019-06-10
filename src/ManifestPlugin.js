@@ -10,7 +10,7 @@ class ManifestPlugin {
             const manifest = Mix.manifest.manifest;
 
             Object.keys(compilation.assets).forEach(asset => {
-                if (! manifest[asset] && multimatch(asset, this.patterns)) {
+                if (! manifest[asset] && multimatch(asset, this.patterns).length) {
                     Mix.manifest.add(asset);
                 }
             });
