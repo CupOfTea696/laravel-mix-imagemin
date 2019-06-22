@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-imagemin",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Laravel Mix imagemin plugin",
   "keywords": [
     "laravel mix",
