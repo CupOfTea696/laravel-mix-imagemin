@@ -2,7 +2,9 @@ const multimatch = require('multimatch');
 
 class ManifestPlugin {
     constructor(patterns = []) {
-        this.patterns = patterns;
+        this.patterns = patterns.map(pattern => {
+            return pattern.from || pattern;
+        });
     }
 
     apply(compiler) {
