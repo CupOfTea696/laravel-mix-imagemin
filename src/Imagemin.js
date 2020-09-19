@@ -13,15 +13,25 @@ class Imagemin {
 
         return ['copy-webpack-plugin', 'imagemin-webpack-plugin'];
     }
-    
+
     register(patterns, copyOptions = {}, imageminOptions = {}) {
         this.patterns = [].concat(patterns);
-        
+
+        let copyPatterns = [];
+        for (var i = 0; i < this.patterns.length; i++) {
+            const pattern = this.patterns[i].replace(/^\/+/g, '');
+
+            copyPatterns.push({
+                from: pattern,
+                to: pattern,
+                context: 'resources'
+            });
+        }
+
         this.copyOptions = Object.assign({
-            from: 'resources',
-            to: 'public'
+            patterns: copyPatterns,
         }, copyOptions);
-        
+
         this.imageminOptions = Object.assign({
             test: /\.(jpe?g|png|gif|svg)$/i,
         }, imageminOptions);
